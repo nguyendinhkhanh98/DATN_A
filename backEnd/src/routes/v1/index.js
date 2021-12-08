@@ -10,7 +10,7 @@ const router = express.Router();
 const defaultRoutes = [
     {
         path: '/auth',
-        roure: authRoute,
+        route: authRoute,
     },
     {
         path: '/users',
@@ -19,6 +19,7 @@ const defaultRoutes = [
 ]
 
 defaultRoutes.forEach((route) => {
-    route.use(route.path, route.route)
+    router.use(route.path, route.route)
 })
+
 module.exports = router

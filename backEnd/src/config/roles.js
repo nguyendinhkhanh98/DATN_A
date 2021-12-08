@@ -4,6 +4,8 @@ const allRoles = {
 };
 
 const roles = Object.keys(allRoles);
+
+// return array[key, value]
 const roleRights = new Map(Object.entries(allRoles));
 
 module.export = {
